@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <radialGradient id="koalaFur" cx="45%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#A0AAB2"/>
+      <stop offset="100%" stop-color="#707A82"/>
+    </radialGradient>
+    <radialGradient id="innerEar" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F2C2C2"/>
+      <stop offset="100%" stop-color="#D69A9A"/>
+    </radialGradient>
+  </defs>
+  <!-- Left Ear -->
+  <circle cx="50" cy="55" r="32" fill="#8E99A0"/>
+  <circle cx="50" cy="55" r="20" fill="url(#innerEar)"/>
+  <!-- Right Ear -->
+  <circle cx="150" cy="55" r="32" fill="#8E99A0"/>
+  <circle cx="150" cy="55" r="20" fill="url(#innerEar)"/>
+  <!-- Head -->
+  <circle cx="100" cy="105" r="62" fill="url(#koalaFur)"/>
+  <!-- Cheeks Fluff -->
+  <ellipse cx="44" cy="115" rx="14" ry="10" fill="#B0B9C0"/>
+  <ellipse cx="156" cy="115" rx="14" ry="10" fill="#B0B9C0"/>
+  <!-- Eyes (Calm Idle) -->
+  <ellipse cx="76" cy="95" rx="7" ry="8" fill="#1C1E22"/>
+  <circle cx="74" cy="92" r="2.5" fill="#FFFFFF"/>
+  <ellipse cx="124" cy="95" rx="7" ry="8" fill="#1C1E22"/>
+  <circle cx="122" cy="92" r="2.5" fill="#FFFFFF"/>
+  <!-- Big Koala Oval Nose -->
+  <ellipse cx="100" cy="112" rx="18" ry="24" fill="#24272D"/>
+  <ellipse cx="96" cy="104" rx="5" ry="3" fill="#4B525B"/>
+  <!-- Gentle Smile -->
+  <path d="M 92 138 Q 100 144 108 138" fill="none" stroke="#24272D" stroke-width="3.5" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <radialGradient id="koalaFurWarn" cx="45%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#A5B0B8"/>
+      <stop offset="100%" stop-color="#6C767E"/>
+    </radialGradient>
+    <radialGradient id="innerEarWarn" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F2C2C2"/>
+      <stop offset="100%" stop-color="#D69A9A"/>
+    </radialGradient>
+  </defs>
+  <!-- Left Ear -->
+  <circle cx="50" cy="55" r="32" fill="#8E99A0"/>
+  <circle cx="50" cy="55" r="20" fill="url(#innerEarWarn)"/>
+  <!-- Right Ear -->
+  <circle cx="150" cy="55" r="32" fill="#8E99A0"/>
+  <circle cx="150" cy="55" r="20" fill="url(#innerEarWarn)"/>
+  <!-- Warning badge aura -->
+  <circle cx="165" cy="35" r="18" fill="#F59E0B" stroke="#FFF" stroke-width="3"/>
+  <text x="165" y="42" font-size="20" font-weight="900" fill="#FFF" text-anchor="middle">!</text>
+  <!-- Head -->
+  <circle cx="100" cy="105" r="62" fill="url(#koalaFurWarn)"/>
+  <!-- Raised Eyebrows (Alert) -->
+  <path d="M 66 78 Q 78 72 88 78" fill="none" stroke="#24272D" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M 112 78 Q 122 72 134 78" fill="none" stroke="#24272D" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- Eyes (Wide Warning) -->
+  <ellipse cx="76" cy="94" rx="9" ry="10" fill="#1C1E22"/>
+  <circle cx="73" cy="90" r="3.5" fill="#FFFFFF"/>
+  <ellipse cx="124" cy="94" rx="9" ry="10" fill="#1C1E22"/>
+  <circle cx="121" cy="90" r="3.5" fill="#FFFFFF"/>
+  <!-- Nose -->
+  <ellipse cx="100" cy="112" rx="18" ry="24" fill="#24272D"/>
+  <ellipse cx="96" cy="104" rx="5" ry="3" fill="#4B525B"/>
+  <!-- O mouth (surprised warning) -->
+  <ellipse cx="100" cy="140" rx="6" ry="7" fill="#24272D"/>
+</svg>

@@ -1,0 +1,196 @@
+/* FocusKoala Extension Styling */
+:root {
+  --bg-dark: #121316;
+  --card-bg: #1C1E24;
+  --card-border: #2E333D;
+  --accent: #E58E26;
+  --accent-light: #F8B739;
+  --accent-soft: rgba(229, 142, 38, 0.15);
+  --text-main: #F3F4F6;
+  --text-muted: #9CA3AF;
+  --success: #10B981;
+}
+
+body.blocked-page {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-dark);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  color: var(--text-main);
+  background-image: radial-gradient(circle at 50% 20%, rgba(229, 142, 38, 0.08) 0%, transparent 60%);
+}
+
+.blocked-card {
+  width: 90%;
+  max-width: 520px;
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 20px;
+  padding: 36px 32px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.koala-avatar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.koala-avatar {
+  font-size: 56px;
+  filter: drop-shadow(0 4px 10px rgba(0,0,0,0.3));
+  animation: koalaBounce 2.5s ease-in-out infinite;
+}
+
+@keyframes koalaBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.status-chip {
+  margin-top: 8px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: var(--accent-light);
+  background-color: var(--accent-soft);
+  padding: 4px 12px;
+  border-radius: 100px;
+  border: 1px solid rgba(229, 142, 38, 0.3);
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: 700;
+  margin: 12px 0 6px 0;
+}
+
+.quote-text {
+  font-size: 16px;
+  color: var(--text-muted);
+  margin: 0 0 24px 0;
+  font-style: italic;
+}
+
+.timer-box {
+  background-color: rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--card-border);
+  border-radius: 14px;
+  padding: 18px;
+  margin-bottom: 24px;
+}
+
+.timer-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-muted);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.timer-digits {
+  font-size: 44px;
+  font-weight: 800;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  color: var(--accent-light);
+  letter-spacing: 2px;
+  margin: 4px 0;
+}
+
+.attempt-badge {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.task-redirection-box {
+  background: rgba(229, 142, 38, 0.05);
+  border: 1px solid rgba(229, 142, 38, 0.25);
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.task-badge {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--accent-light);
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.task-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin: 8px 0 4px 0;
+}
+
+.task-sub {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin: 0 0 16px 0;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.btn-primary {
+  flex: 1;
+  background-color: var(--accent);
+  color: #FFFFFF;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-light);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--text-main);
+  border: 1px solid var(--card-border);
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.footer-note {
+  font-size: 11px;
+  color: #6B7280;
+}
+
+/* Extension Popup Style */
+body.popup-page {
+  width: 340px;
+  margin: 0;
+  padding: 16px;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}

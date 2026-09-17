@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <radialGradient id="koalaFurInterv" cx="45%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#A5B0B8"/>
+      <stop offset="100%" stop-color="#606A72"/>
+    </radialGradient>
+    <radialGradient id="innerEarInterv" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F2C2C2"/>
+      <stop offset="100%" stop-color="#D69A9A"/>
+    </radialGradient>
+  </defs>
+  <!-- Left Ear -->
+  <circle cx="50" cy="55" r="32" fill="#8E99A0"/>
+  <circle cx="50" cy="55" r="20" fill="url(#innerEarInterv)"/>
+  <!-- Right Ear -->
+  <circle cx="150" cy="55" r="32" fill="#8E99A0"/>
+  <circle cx="150" cy="55" r="20" fill="url(#innerEarInterv)"/>
+  <!-- Head -->
+  <circle cx="100" cy="105" r="62" fill="url(#koalaFurInterv)"/>
+  <!-- Determined Eyebrows (Slanted inwards) -->
+  <path d="M 68 80 L 86 86" stroke="#24272D" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M 132 80 L 114 86" stroke="#24272D" stroke-width="4.5" stroke-linecap="round"/>
+  <!-- Focused Eyes -->
+  <ellipse cx="76" cy="96" rx="7" ry="7" fill="#1C1E22"/>
+  <circle cx="78" cy="94" r="2" fill="#FFFFFF"/>
+  <ellipse cx="124" cy="96" rx="7" ry="7" fill="#1C1E22"/>
+  <circle cx="122" cy="94" r="2" fill="#FFFFFF"/>
+  <!-- Big Koala Nose -->
+  <ellipse cx="100" cy="112" rx="18" ry="24" fill="#24272D"/>
+  <ellipse cx="96" cy="104" rx="5" ry="3" fill="#4B525B"/>
+  <!-- Firm straight mouth -->
+  <line x1="90" y1="140" x2="110" y2="140" stroke="#24272D" stroke-width="4" stroke-linecap="round"/>
+  <!-- Pointing Paw gesturing 'Stop / Close' -->
+  <g transform="translate(140, 110)">
+    <circle cx="20" cy="20" r="18" fill="#8E99A0" stroke="#606A72" stroke-width="2"/>
+    <ellipse cx="14" cy="10" rx="4" ry="7" fill="#444" transform="rotate(-20 14 10)"/>
+    <ellipse cx="26" cy="10" rx="4" ry="7" fill="#444" transform="rotate(10 26 10)"/>
+    <ellipse cx="36" cy="18" rx="4" ry="7" fill="#444" transform="rotate(40 36 18)"/>
+  </g>
+  <!-- Stop Badge -->
+  <rect x="20" y="145" width="60" height="26" rx="6" fill="#EF4444"/>
+  <text x="50" y="163" font-size="12" font-weight="800" fill="#FFF" text-anchor="middle" font-family="sans-serif">BREAK</text>
+</svg>

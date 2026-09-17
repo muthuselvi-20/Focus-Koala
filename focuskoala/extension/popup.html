@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FocusKoala Popup</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body.popup-page {
+      width: 320px;
+      padding: 16px;
+      box-sizing: border-box;
+    }
+    .header-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px;
+    }
+    .logo-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 700;
+      font-size: 16px;
+    }
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: var(--success);
+      display: inline-block;
+      box-shadow: 0 0 6px var(--success);
+    }
+    .card-sm {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 12px;
+      margin-bottom: 12px;
+    }
+    .card-label {
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    .site-list {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .site-item {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      padding: 6px 8px;
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body class="popup-page">
+  <div class="header-bar">
+    <div class="logo-group">
+      <span>🐨</span>
+      <span>FocusKoala</span>
+    </div>
+    <div>
+      <span class="status-dot"></span>
+      <span style="font-size: 11px; color: #9CA3AF; margin-left: 4px;">Active</span>
+    </div>
+  </div>
+
+  <div class="card-sm">
+    <div class="card-label">CURRENT ACTIVE TASK</div>
+    <div id="popup-task" style="font-size: 13px; font-weight: 600; color: #FFF;">Complete 3 DSA problems</div>
+  </div>
+
+  <div class="card-sm">
+    <div class="card-label">MONITORED LIMITS (TEST MODE: 60s)</div>
+    <div class="site-list" id="monitored-list">
+      <div class="site-item">
+        <span>📸 Instagram</span>
+        <span style="color: var(--accent-light);">60s limit / 120s cool</span>
+      </div>
+      <div class="site-item">
+        <span>▶️ YouTube</span>
+        <span style="color: var(--text-muted);">45m limit</span>
+      </div>
+      <div class="site-item">
+        <span>💬 Reddit</span>
+        <span style="color: var(--text-muted);">20m limit</span>
+      </div>
+    </div>
+  </div>
+
+  <div style="display: flex; gap: 8px;">
+    <button id="quick-focus-btn" class="btn-primary" style="font-size: 12px; padding: 8px 12px;">30m Focus</button>
+    <button id="open-app-btn" class="btn-secondary" style="font-size: 12px; padding: 8px 12px;">Open App</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

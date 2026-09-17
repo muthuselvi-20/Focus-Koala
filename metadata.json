@@ -1,0 +1,6 @@
+{
+  "name": "FocusKoala",
+  "description": "Desktop productivity agent with animated Koala intervention, smart website blocking, cooldowns, and task redirection.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
